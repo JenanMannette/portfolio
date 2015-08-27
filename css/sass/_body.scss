@@ -1,0 +1,121 @@
+//BODY
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+img, embed, object, video{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/*  ----------- Phones ----------- */
+@media screen and (min-width : 320px) {
+
+  body {
+    background-color: #ffd661;
+  }
+  .img-header {
+    height: 200px;
+    width: 100%;
+  }
+
+  .nav-header {
+    max-width: 100%;
+    margin: 0 auto;
+    a {
+      background-color: grey;
+      display: block;
+      border: 1px solid black;
+      width: 100%;
+    }
+  }
+
+  .projects {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .project-preview {
+    margin-top: 30px;
+    border: 1px solid white;
+  }
+
+}
+
+/* -----------  Tablets ----------- */
+@media screen and (min-width : 768px)
+and (max-width : 1024px) {
+
+  body {
+    background-color: lightgreen;
+  }
+
+  .img-header {
+    height: 400px;
+    width: 100%;
+  }
+
+  .nav-header {
+    max-width: 100%;
+    margin: 0 auto;
+    a {
+      background-color: orange;
+    }
+  }
+}
+
+
+/*  ----------- Desktops and laptops ----------- */
+@media screen and (min-width : 1000px) {
+
+  body {
+    background-color: lightblue;
+  }
+
+  .img-header {
+    height: 500px;
+    width: 100%;
+  }
+
+  .nav-header {
+    max-width: 100%;
+    margin: 0 auto;
+    a {
+      background-color: pink;
+      display: inline;
+      border: 1px solid black;
+      width: 100%;
+    }
+  }
+
+  .projects {
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+    border: 1px solid black;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .project-preview {
+    display: inline-block;
+    border: 1px solid white;
+    width: 55%;
+    margin-left: 20px;
+    height: 400px;
+  }
+}
