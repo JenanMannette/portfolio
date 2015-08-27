@@ -18,9 +18,6 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: "views/contact.html",
             controller: "Pages"
         })
-        .when('/resume', {
-            controller: "Resume"
-        })
         .otherwise ({
             //templateUrl: "views/404.html",
             redirectTo: "/",

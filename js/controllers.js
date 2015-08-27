@@ -7,16 +7,10 @@ app.controller("Projects", function ($scope, $routeParams) {
 });
 
 app.controller("Resume", function ($scope, $http) {
-    var pdf = 'images/Mannette, Jenan_Resume.pdf'
-    //$window.open(pdf);
-
-    $http
-        .get(pdf)
-        .success(function(data){
-            //data is link to pdf
-            $window.open(data);
-        });
-})
+    $scope.newTab = function () {
+        window.open('../images/Resume.pdf','_blank');
+    }
+});
 
 //app.controller("404", function ($scope) {
 //    alert("You accessed a page that doesn't exist. Redirecting!")
