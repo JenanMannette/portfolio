@@ -1,0 +1,186 @@
+.project-body {
+  .projects {
+    img {
+      border: 1px solid grey;
+      height: 100px;
+      width: 100px;
+    }
+    img:hover {
+
+    }
+  }
+  .project-preview {
+    text-align: center;
+    h3 {
+      margin: -20px;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+
+
+
+
+//figure.effect-zoe figcaption {
+//  top: auto;
+//  bottom: 0;
+//  padding: 1em;
+//  height: 3.75em;
+//  background: #fff;
+//  color: #3c4a50;
+//  -webkit-transition: -webkit-transform 0.35s;
+//  transition: transform 0.35s;
+//  -webkit-transform: translate3d(0,100%,0);
+//  transform: translate3d(0,100%,0);
+//}
+//
+//figure.effect-zoe h2 {
+//  float: left;
+//}
+//
+//figure.effect-zoe p.icon-links a {
+//  float: right;
+//  color: #3c4a50;
+//  font-size: 1.4em;
+//}
+//
+//figure.effect-zoe:hover p.icon-links a:hover,
+//figure.effect-zoe:hover p.icon-links a:focus {
+//  color: #252d31;
+//}
+//
+//figure.effect-zoe p.description {
+//  position: absolute;
+//  bottom: 8em;
+//  padding: 2em;
+//  color: #fff;
+//  text-transform: none;
+//  font-size: 90%;
+//  opacity: 0;
+//  -webkit-transition: opacity 0.35s;
+//  transition: opacity 0.35s;
+//  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+//}
+//
+//figure.effect-zoe h2,
+//figure.effect-zoe p.icon-links a {
+//  -webkit-transition: -webkit-transform 0.35s;
+//  transition: transform 0.35s;
+//  -webkit-transform: translate3d(0,200%,0);
+//  transform: translate3d(0,200%,0);
+//}
+//
+//figure.effect-zoe p.icon-links a span::before {
+//  display: inline-block;
+//  padding: 8px 10px;
+//  font-family: 'feathericons';
+//  speak: none;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+//
+//.icon-eye::before {
+//  content: '\e000';
+//}
+//
+//.icon-paper-clip::before {
+//  content: '\e001';
+//}
+//
+//.icon-heart::before {
+//  content: '\e024';
+//}
+//
+//figure.effect-zoe h2 {
+//  display: inline-block;
+//}
+//
+//figure.effect-zoe:hover p.description {
+//  opacity: 1;
+//}
+//
+//figure.effect-zoe:hover figcaption,
+//figure.effect-zoe:hover h2,
+//figure.effect-zoe:hover p.icon-links a {
+//  -webkit-transform: translate3d(0,0,0);
+//  transform: translate3d(0,0,0);
+//}
+//
+//figure.effect-zoe:hover h2 {
+//  -webkit-transition-delay: 0.05s;
+//  transition-delay: 0.05s;
+//}
+//
+//figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+//  -webkit-transition-delay: 0.1s;
+//  transition-delay: 0.1s;
+//}
+//
+//figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+//  -webkit-transition-delay: 0.15s;
+//  transition-delay: 0.15s;
+//}
+//
+//figure.effect-zoe:hover p.icon-links a:first-child {
+//  -webkit-transition-delay: 0.2s;
+//  transition-delay: 0.2s;
+//}
+//
+////---------------------- other page with styles  -----------------------
+//  ----------------------------------------------------------------------
+//.cs-style-3 figure {
+//  overflow: hidden;
+//}
+//
+//.cs-style-3 figure img {
+//  -webkit-transition: -webkit-transform 0.4s;
+//  -moz-transition: -moz-transform 0.4s;
+//  transition: transform 0.4s;
+//}
+//
+//.no-touch .cs-style-3 figure:hover img,
+//.cs-style-3 figure.cs-hover img {
+//  -webkit-transform: translateY(-50px);
+//  -moz-transform: translateY(-50px);
+//  -ms-transform: translateY(-50px);
+//  transform: translateY(-50px);
+//}
+//
+//.cs-style-3 figcaption {
+//  height: 100px;
+//  width: 100%;
+//  top: auto;
+//  bottom: 0;
+//  opacity: 0;
+//  -webkit-transform: translateY(100%);
+//  -moz-transform: translateY(100%);
+//  -ms-transform: translateY(100%);
+//  transform: translateY(100%);
+//  -webkit-backface-visibility: hidden;
+//  -moz-backface-visibility: hidden;
+//  backface-visibility: hidden;
+//  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+//  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+//  transition: transform 0.4s, opacity 0.1s 0.3s;
+//}
+//
+//.no-touch .cs-style-3 figure:hover figcaption,
+//.cs-style-3 figure.cs-hover figcaption {
+//  opacity: 1;
+//  -webkit-transform: translateY(0px);
+//  -moz-transform: translateY(0px);
+//  -ms-transform: translateY(0px);
+//  transform: translateY(0px);
+//  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+//  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+//  transition: transform 0.4s, opacity 0.1s;
+//}
+//
+//.cs-style-3 figcaption a {
+//  position: absolute;
+//  bottom: 20px;
+//  right: 20px;
+//}

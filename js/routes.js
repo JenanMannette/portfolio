@@ -4,19 +4,19 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "views/home.html",
-            controller: "Pages"
+            controller: "PortfolioInfo"
         })
         .when("/about", {
             templateUrl: "views/about.html",
-            controller: "Pages"
+            controller: "PortfolioInfo"
         })
         .when("/projects", {
             templateUrl: "views/projects.html",
-            controller: "Pages"
+            controller: "PortfolioInfo"
         })
         .when("/contact", {
             templateUrl: "views/contact.html",
-            controller: "Pages"
+            controller: "PortfolioInfo"
         })
         .otherwise ({
             //templateUrl: "views/404.html",

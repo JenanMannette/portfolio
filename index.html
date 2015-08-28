@@ -4,21 +4,27 @@
     <meta charset="UTF-8" name="viewport" content="initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200|Open+Sans+Condensed:300|Sail|Rouge+Script|Lobster|Dawning+of+a+New+Day|Cedarville+Cursive' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <base href="/">
     <title>Jenan's Page</title>
 </head>
-<body ng-controller="Pages">
+<body ng-controller="PortfolioInfo">
 
 <header>
-    <div class="img-header darken"></div>
-    <div class="name">Jenan Mannette</div>
-    <div class="intro">Full Stack Software Developer</div>
-    <nav class="nav-header">
+    <div class="img-header darken wrap one-whole">
+        <div class="text-in-header">
+            <h2 class="name">Jenan Mannette</h2>
+            <h3 class="intro">Full Stack Software Developer</h3>
+        </div>
+    </div>
+
+
+    <nav class="nav-header" name="top" id="top">
             <a href="#about" class="about-link">About</a>
             <a href="#projects" class="projects-link">Projects</a>
         <img src="images/img-profile.jpg" alt="profile picture" class="img-header"/>
             <a href="#contact" class="contact-link">Contact</a>
-            <a href="" ng-controller="Resume" ng-click="newTab()">Resume</a>
+            <a href="" ng-click="newTab()" class="one-whole">Resume</a>
     </nav>
 </header>
 
@@ -26,7 +32,14 @@
 
 <footer>
     <nav class="nav-footer">
-        //contact info here
+        <a href="#top">Menu</a>
+        <section class="social-media">
+            <a href="mailto:jenanmannette@gmail.com"><i class="fa fa-envelope"></i></a> |
+            <a href="http://www.github.com/jenanmannette" target="_blank"><i class="fa fa-github"></i></a> |
+            <a href="http://www.linkedin.com/in/jenanmannette" target="_blank"><i class="fa fa-linkedin"></i></a> |
+              <a href="http://www.twitter.com/jenanmannette" target="_blank"><i class="fa fa-twitter"></i></a>
+        </section>
+
     </nav>
 </footer>
 

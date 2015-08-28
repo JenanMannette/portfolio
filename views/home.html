@@ -1,42 +1,61 @@
-<img src="../images/img-divider.png" alt="divider" class="img-divider"/>
+<img src="{{divider}}" alt="divider" class="img-divider"/>
 
+<!------------------- ABOUT SECTION -------------------------->
 <a name="about" id="about">
     <h1>ABOUT PARAGRAPH</h1>
-    Cupcake ipsum dolor sit amet wafer pastry icing tootsie roll. Jujubes chupa chups bonbon powder. Macaroon ice cream candy canes. Gingerbread tootsie roll carrot cake cake macaroon marshmallow. Sesame snaps carrot cake marzipan lollipop carrot cake candy canes dragée liquorice toffee. Soufflé carrot cake gummies bear claw tiramisu cheesecake apple pie. Macaroon toffee biscuit liquorice donut sugar plum dessert bear claw chocolate bar. Gummi bears wafer bonbon cotton candy ice cream. Bonbon jelly beans cookie cotton candy pastry. Sweet roll dessert tart jelly-o sesame snaps lemon drops croissant sweet roll oat cake. Topping biscuit pudding sweet roll marzipan chocolate bar cupcake. Chocolate cake pastry cookie biscuit candy.
-    Marzipan brownie brownie sweet roll cookie wafer jelly beans bonbon macaroon. Lollipop marzipan biscuit sesame snaps marshmallow apple pie donut cupcake. Pie lemon drops gummi bears candy canes chocolate bar. Marshmallow jelly beans candy toffee. Cupcake candy jelly beans powder gingerbread lollipop pudding dessert. Lollipop cake sweet gingerbread cheesecake cookie. Sugar plum brownie gummies gummies tiramisu brownie sesame snaps tart soufflé. Sugar plum gingerbread soufflé caramels tart tootsie roll macaroon tootsie roll lemon drops. Brownie cheesecake caramels. Soufflé caramels toffee chocolate bar ice cream chupa chups. Wafer icing liquorice danish icing biscuit jujubes. Cookie biscuit jelly-o.
+    {{about}}
 </a>
 
 <img src="../images/img-divider.png" alt="divider" class="img-divider"/>
 
+<!------------------- PROJECTS SECTION -------------------------->
 <a name="projects" id="projects">
-   <!--ng-controller="Projects" ng-repeat="project in projects">-->
     <h1>PROJECTS PARAGRAPH</h1>
-    <div class="projects">
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
+    <div class="project-body">
 
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
+        <!------THUMBNAIL----->
+        <div class="projects" ng-repeat="thumbnail in projects">
+            <a ng-click="show()"><img src="{{thumbnail.thumbnail}}"></a>
+        </div>
 
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
-        <img src="http://placehold.it/100x100">
-    </div>
+        <!------PREVIEW----->
+        <div ng-show="formClick > 0" class="project-preview" ng-repeat="preview in projects">
+            <h3>{{preview.title}}</h3><br>
+            <h6>{{preview.description}}</h6><br>
+            <img src="{{preview.preview}}" alt="project preview"/>
+            <span class="project-description">
+                Technologies: {{preview.technologies}}<br>
+                    <a href="https://github.com/JenanMannette/tictactoe" target="_blank"><i class="fa fa-github"></i></a> || <a
+                    href="https://jenan-tictactoe.herokuapp.com/" target="_blank">Live Demo</a>
+            </span>
+        </div>
 
-    <div class="project-preview">
-        <img src="images/mobiledevices.png" alt="devices"/>
     </div>
 </a>
 
 <img src="../images/img-divider.png" alt="divider" class="img-divider"/>
 
+<!------------------- CONTACT SECTION -------------------------->
 <a name="contact" id="contact">
     <h1>CONTACT PARAGRAPH</h1>
-    Name: <input type="text" placeholder="Name"/>
-    <br>
-    Email: <input type="text" placeholder="Email"/>
-    <br>
-    <textarea name="message" id="message" cols="20" rows="4" placeholder="Message here"></textarea>
+
+    <form enctype="text/plain" method="get" action="mailto:jenanmannette@gmail.com">
+        Your First Name: <input type="text" name="first_name"><br>
+        Your Last Name: <input type="text" name="last_name"><br>
+        Comments: <textarea rows="5" cols="30" name="comments"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <!--<form action="mailto:jenanmannette@gmail.com" method="post" Enctype="text/plain">-->
+        <!--<label for="name">Name:</label>-->
+        <!--<input type="text" id="name" placeholder="Name"/>-->
+        <!--<br>-->
+        <!--Email: <input type="text" placeholder="Email"/>-->
+        <!--<br>-->
+        <!--<textarea name="message" id="message" cols="20" rows="4" placeholder="Message here"></textarea>-->
+        <!--<input type="submit" value="Send!"/>-->
+    <!--</form>-->
 </a>
+
+<img src="../images/img-divider.png" alt="divider" class="img-divider"/>
+

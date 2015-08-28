@@ -5,26 +5,13 @@ html {
 }
 
 .name {
-  //font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
   //font-family: 'Dawning of a New Day', cursive;
-  font-family: 'Cedarville Cursive', cursive;
   color: white;
-  position: relative;
-  z-index: 2;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  -webkit-font-smoothing: antialiased;
 }
 
 
 .intro {
   font-family: 'Open Sans Condensed', sans-serif;
-  position:relative;
-  top: -50px;
-  left: 5px;
-  color: darkgray;
-  z-index: 1
+  color: darkgrey;
 }

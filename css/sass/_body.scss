@@ -10,11 +10,24 @@ body {
 
 img, embed, object, video{
   max-width: 100%;
-  height: auto;
 }
 
+/*  ----------- Columns ----------- */
+.one-whole {
+  max-width: 100%;
+}
 
+.one-half {
+  width: 50%;
+}
 
+.one-third {
+ width: 33.33%;
+}
+
+.one-fourth {
+ width: 25%;
+}
 
 
 /*  ----------- Phones ----------- */
@@ -25,31 +38,54 @@ img, embed, object, video{
   }
   .img-header {
     height: 200px;
-    width: 100%;
+  }
+
+  .text-in-header {
+    float: right;
+    background-color: rgba(000,000,000, .5);
+    height: 150px;
+  }
+  .name {
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    z-index: 2;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .intro {
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    left: 40px;
+    z-index: 1
   }
 
   .nav-header {
     max-width: 100%;
     margin: 0 auto;
     a {
+      width: 100%;
       background-color: grey;
       display: block;
       border: 1px solid black;
-      width: 100%;
     }
   }
 
   .projects {
-    width: 100%;
     height: 200px;
-    border: 1px solid black;
     overflow: auto;
     padding: 10px;
   }
 
   .project-preview {
     margin-top: 30px;
-    border: 1px solid white;
   }
 
 }
@@ -96,29 +132,35 @@ and (max-width : 1024px) {
 
   .nav-header {
     max-width: 100%;
+    background-color: grey;
+    border: 1px solid black;
     margin: 0 auto;
     a {
-      background-color: pink;
+      border: 0;
       display: inline;
-      border: 1px solid black;
       width: 100%;
     }
   }
 
-  .projects {
-    width: 40%;
-    height: 400px;
-    display: inline-block;
-    border: 1px solid black;
-    overflow: auto;
-    padding: 10px;
-  }
+  .project-body {
+    border: 3px solid black;
+    .projects {
+      width: 40%;
+      height: 700px;
+      display: inline-block;
+      overflow: auto;
+      padding: 10px;
+    }
 
-  .project-preview {
-    display: inline-block;
-    border: 1px solid white;
-    width: 55%;
-    margin-left: 20px;
-    height: 400px;
+    .project-preview {
+      display: inline-block;
+      position: relative;
+        width: 50%;
+        padding: 20px;
+      img {
+        margin-left: 100px;
+        height: 400px;
+      }
+    }
   }
 }
